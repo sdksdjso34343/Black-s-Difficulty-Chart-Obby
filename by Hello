@@ -1,0 +1,14 @@
+game.StarterGui:SetCore("SendNotification", {
+Title = "Credits";
+Text = "Made by Hello)#0182";
+Duration = math.huge;
+Button1 = "Ok"
+})
+
+local Number = game:GetService("Players").LocalPlayer.leaderstats.Stage.Value 
+ 
+for i,v in pairs(game.Workspace:GetChildren()) do 
+ Number = Number + 1 
+ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace[Number].CFrame 
+ wait(1) 
+end
